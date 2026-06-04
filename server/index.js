@@ -14,9 +14,9 @@ dotenv.config(); // also honour a local .env / real env vars
 
 const PORT = process.env.PORT || 8787;
 
-// The user asked for "Claude Sonnet 4". That is the model id below. To use the
-// current Sonnet instead, set MODEL=claude-sonnet-4-6 in .env.
-const MODEL = process.env.MODEL || 'claude-sonnet-4-20250514';
+// Claude Sonnet 4.6 — the current Sonnet, best speed/intelligence balance, which
+// suits a real-time spoken pitch (low latency) better than Opus. Override via .env.
+const MODEL = process.env.MODEL || 'claude-sonnet-4-6';
 
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const client = apiKey ? new Anthropic({ apiKey }) : null;

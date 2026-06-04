@@ -67,8 +67,10 @@ Open http://localhost:5173 in **Chrome or Edge** (for speech input).
 
 ## Model
 
-Defaults to `claude-sonnet-4-20250514` (Claude Sonnet 4, as specified). To use the
-current Sonnet instead, set `MODEL=claude-sonnet-4-6` in `.env` and restart the server.
+Defaults to **`claude-sonnet-4-6`** — the current Claude Sonnet, chosen for its
+speed/intelligence balance, which suits a real-time spoken pitch (low latency)
+better than Opus. For the hardest reasoning you can set `MODEL=claude-opus-4-8`
+in `.env` (smarter, but slower and pricier) and restart the server.
 
 ## Usage
 
